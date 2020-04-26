@@ -1,0 +1,25 @@
+.Main {
+    grid-area: main;
+    color: #333654;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.Main--content {
+    margin: 4rem 13.5rem;
+    background-color:#8ae48a;
+    border-radius: 25px;
+    
+}
+
+.Main--content video {
+    margin: 0 1rem 1rem 1rem;
+    background-color: black;
+    border-radius: 25px;
+}
+
+.Main--text {
+    text-align: left;
+    padding: 0.5rem 0 0 4.75rem;
+}
