@@ -1,46 +1,36 @@
 .Header {
+  grid-area: header;
+  display: grid;
+  grid-template-areas:
+    "title . ."
+    "title . imglink";
 
-    grid-area: header;     
-    display: grid;
-    grid-template-areas:
-        "title empty empty"
-        "title none imglink";
-        
-    background-color: #333654;
-    color: #d5f06f;
-    padding: 0.5em;
- 
-   font-family: 'Sofia', cursive;
+  background-color: #333654;
+  color: #d5f06f;
 
+  font-family: "Sofia", cursive;
 }
 
 .Header--title {
-    grid-area: title;
-    text-align: left;
-    font-size: 40px ;
-    padding-left: 1em;
-  
+  grid-area: title;
+  text-align: left;
+  font-size: 40px;
+  padding-left: 1em;
 }
 
-.Header--title a{
-    color: inherit;
-    text-decoration: inherit;
+.Header--title a {
+  color: inherit;
+  text-decoration: inherit;
 }
-
 
 .Header--imglink {
-    grid-area: imglink;
-    padding-top: 1em;
-    text-align: right;
-    font-size: 25px;
-    padding-right: 1em;
-    
-
+  grid-area: imglink;
+  padding-right: 1em;
+  text-align: right;
+  font-size: 25px;
 }
 
 .Header--imglink a {
-    color: inherit;
-    text-decoration: inherit;
+  color: inherit;
+  text-decoration: inherit;
 }
-
-

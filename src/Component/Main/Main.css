@@ -1,25 +1,35 @@
 .Main {
-    grid-area: main;
-    color: #333654;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    
+  grid-area: main;
+  color: #333654;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-rows: minmax(5%, 1fr) max-content minmax(5%, 1fr);
+  grid-template-columns: minmax(5%, 1fr) max-content minmax(5%, 1fr);
 }
 
 .Main--content {
-    margin: 4rem 13.5rem;
-    background-color:#8ae48a;
-    border-radius: 25px;
-    
-}
-
-.Main--content video {
-    margin: 0 1rem 1rem 1rem;
-    background-color: black;
-    border-radius: 25px;
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+  background-color: #8ae48a;
+  border-radius: 25px;
 }
 
 .Main--text {
-    text-align: left;
-    padding: 0.5rem 0 0 4.75rem;
+  text-align: left;
+  padding: 0.5rem 0 0.5rem 4.75rem;
+}
+
+.Main--content .Main--stream {
+  background-color: black;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 0 2rem 2rem 2rem;
+  width: 1280px;
+  height: 720px;
+}
+
+.Main--content .Main--stream .jsmpeg {
+  width: 1280px;
+  height: 720px;
 }
